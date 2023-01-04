@@ -13,7 +13,7 @@ public class Print {
             number1 = Double.parseDouble(reader2.readLine());
             System.out.print("Ingrese numero 2 -> ");
             number2 = Double.parseDouble(reader2.readLine());
-            System.out.print("Ingrese el método matemático (\"+\",\"-\",\"*\",\"/\") -> ");
+            System.out.print("Ingrese el método matemático (\"+\",\"-\",\"*\",\"/\",\"%\") -> ");
             info = reader2.readLine();
             Calculate.compareLogic(number1,number2,0,info);
         }
