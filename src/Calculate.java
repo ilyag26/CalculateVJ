@@ -20,15 +20,21 @@ public class Calculate {
         System.out.print(sum + " y esto "+ (sum < 0 ? "negativo" : "positivo") + " Número");
     }
     public static void compareLogic(double num1,double num2,double result,String s1){
-        if(s1.contains("+")){
+        int count = 0;
+        for(int i = 0; i<s1.length(); i++) {
+            count++;
+        }
+        if(s1.contains("+") && count == 1){
             Calculate.printResultPlus(num1,num2,result,s1);
-        }else if(s1.contains("-")){
+        }else if(s1.contains("-") && count == 1){
             Calculate.printResultMinus(num1,num2,result,s1);
-        }else if(s1.contains("/")){
+        }else if(s1.contains("/") && count == 1){
             Calculate.printResultDivision(num1,num2,result,s1);
-        }else if(s1.contains("*")) {
+        }else if(s1.contains("*") && count == 1) {
             Calculate.printResultMultiplication(num1,num2,result,s1);
-        }else{
+        }else if(count > 1){
+            System.out.println("La cadena debe contener solo 1 carácter.");
+        } else {
             System.out.println("Escribir solo operación matemática");
         }
     }
