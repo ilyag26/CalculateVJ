@@ -33,6 +33,7 @@ public class Calculate {
         }
         return count;
     }
+    
     public static void compareLogic(double num1,double num2,double result,String s1){
         int count = strCheck(s1);
         if(s1.contains("+") && count == 1){
