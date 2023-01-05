@@ -18,7 +18,7 @@ public class Print {
             Calculate.compareLogic(number1,number2,0,info);
         }
         catch(Exception e) {
-            System.out.println("Pedí Número, pero no un String");
+            Calculate.printMassage();
         }
     }
 
