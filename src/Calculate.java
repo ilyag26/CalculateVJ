@@ -26,15 +26,12 @@ public class Calculate {
         sum = num1 % num2;
         printMethod(num1,num2,sum,string);
     }
-    static int strCheck(String s1){
+
+    public static void compareLogic(double num1,double num2,double result,String s1){
         int count = 0;
         for(int i = 0; i<s1.length(); i++) {
             count++;
         }
-        return count;
-    }
-    public static void compareLogic(double num1,double num2,double result,String s1){
-        int count = strCheck(s1);
         if(s1.contains("+") && count == 1){
             Calculate.ResultPlus(num1,num2,result,s1);
         }else if(s1.contains("-") && count == 1){
